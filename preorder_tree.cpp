@@ -32,8 +32,8 @@ TreeNode* builtTree(TreeNode* root)
     {
         root = new TreeNode(data);
     }
-    root->left =  builtTree(root->left); // will return me the address of my leftchild node
-	root->right =  builtTree(root->right); // will return me the adress of rightchild node
+    root->left =  builtTree(root->left); // will return the address of my leftchild node
+	root->right =  builtTree(root->right); // will return the adress of rightchild of the node
 
 	return root;
 }
